@@ -1,9 +1,9 @@
-function handleSubmit(event) {
+function Form(props) {
+  function handleSubmit(event) {
     event.preventDefault();
-    alert("Hi!");
-}
+    props.addTask("Say Hello!");
+  }
 
-function Form() {
   return (
     <form onSubmit={handleSubmit}>
       <h2 className="label-wrapper">
