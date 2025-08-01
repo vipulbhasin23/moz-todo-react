@@ -6,6 +6,7 @@ import { useState } from "react";
 
 function App(props) {
   const [tasks, setTasks] = useState(props.tasks);
+  const [filter, setFilter] = useState("All");
 
   function toggleTaskCompleted(id) {
     const updatedTasks = tasks.map((task) => {
